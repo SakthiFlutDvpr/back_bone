@@ -2,6 +2,7 @@ import 'package:back_bone/constants/app_colors.dart';
 import 'package:back_bone/constants/app_images.dart';
 import 'package:back_bone/controllers/otp_controller.dart';
 import 'package:back_bone/extensions/spacing_extensions.dart';
+import 'package:back_bone/routes/app_routes.dart';
 import 'package:back_bone/utils/action_button.dart';
 import 'package:back_bone/utils/flutter_custom_text.dart';
 import 'package:back_bone/utils/flutter_input_field.dart';
@@ -201,7 +202,9 @@ class OtpScreen extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 50.w, right: 50.w),
                 child: GradientColoredButton(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed(AppRoutes.dashboardScreen);
+                  },
 
                   child: FlutterCustomText(
                     text: 'VERIFY',

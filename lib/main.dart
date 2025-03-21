@@ -1,4 +1,5 @@
 import 'package:back_bone/constants/app_theme.dart';
+import 'package:back_bone/routes/app_bindings.dart';
 import 'package:back_bone/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,9 +23,9 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Back-Bone',
             theme: AppTheme().themeData,
-            // initialBinding: SplashBinding(),
-            // initialRoute: AppRoutes.splashScreen,
-            initialRoute: AppRoutes.dashboardScreen,
+            initialBinding: SplashBinding(),
+            initialRoute: AppRoutes.splashScreen,
+
             getPages: AppRoutes().getPages,
           ),
     );

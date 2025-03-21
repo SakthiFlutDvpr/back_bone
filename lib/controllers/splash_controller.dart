@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 class SplashController extends GetxController {
   authStatus() async {
-    await Future.delayed(const Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 1));
 
     Get.offNamed(AppRoutes.welcomeScreen);
   }

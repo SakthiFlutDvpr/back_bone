@@ -55,6 +55,7 @@ class HomeView extends StatelessWidget {
                   child: GradientBorderedButton(
                     onTap: () {},
                     borderRadius: BorderRadius.circular(50.r),
+                    isStack: true,
                     child: GradientText(text: 'View Details'),
                   ),
                 ),
@@ -63,6 +64,7 @@ class HomeView extends StatelessWidget {
                   child: GradientBorderedButton(
                     onTap: () {},
                     borderRadius: BorderRadius.circular(50.r),
+                    isStack: true,
                     child: GradientText(text: 'View Details'),
                   ),
                 ),
@@ -85,7 +87,7 @@ class HomeView extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     fontStyle: FontStyle.italic,
                   ),
-                  context.verticalSpacing(8.h),
+                  context.verticalSpacing(10.h),
                   IntrinsicHeight(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,6 +104,7 @@ class HomeView extends StatelessWidget {
                                   fontSize: 14.sp,
                                   fontWeight: FontWeight.w400,
                                 ),
+                                context.verticalSpacing(2.h),
                                 FlutterInputField(
                                   inputType: TextInputType.text,
                                   filled: true,
@@ -135,6 +138,7 @@ class HomeView extends StatelessWidget {
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
                               ),
+                              context.verticalSpacing(2.h),
                               FlutterInputField(
                                 inputType: TextInputType.text,
                                 filled: true,
@@ -166,6 +170,7 @@ class HomeView extends StatelessWidget {
                                   fontSize: 14.sp,
                                   fontWeight: FontWeight.w400,
                                 ),
+                                context.verticalSpacing(2.h),
                                 FlutterInputField(
                                   inputType: TextInputType.text,
                                   filled: true,
@@ -190,7 +195,7 @@ class HomeView extends StatelessWidget {
                       ],
                     ),
                   ),
-                  context.verticalSpacing(8.h),
+                  context.verticalSpacing(10.h),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

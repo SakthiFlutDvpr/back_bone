@@ -17,6 +17,7 @@ class GradientBorderedButton extends StatelessWidget {
     required this.child,
     this.borderWidth,
     this.borderRadius,
+    this.isStack,
   });
 
   final Widget child;
@@ -27,6 +28,7 @@ class GradientBorderedButton extends StatelessWidget {
   final double? vertPadding;
   final double? horPadding;
   final BorderRadius? borderRadius;
+  final bool? isStack;
 
   @override
   Widget build(BuildContext context) {
@@ -60,14 +62,17 @@ class GradientBorderedButton extends StatelessWidget {
               child: Center(child: child),
             ),
           ),
-          Positioned(
-            top: -4.h,
-            right: -1.w,
-            child: ImageCard(
-              imageUrl: AppImages().starIcon,
-              width: 21.w,
-              height: 21.w,
-              fit: BoxFit.fill,
+          Visibility(
+            visible: isStack ?? false,
+            child: Positioned(
+              top: -5.h,
+              right: -2.w,
+              child: ImageCard(
+                imageUrl: AppImages().starIcon,
+                width: 21.w,
+                height: 21.w,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
         ],
